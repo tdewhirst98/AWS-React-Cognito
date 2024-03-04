@@ -12,11 +12,11 @@ Create a `.env` file in the root directory of the project.
 
 Open the source folder and locate the following lines in your code:
 
-```javascript
+`javascript
 const poolData = {
     UserPoolId: process.env.REACT_APP_POOL_ID,
     ClientId: process.env.REACT_APP_CLIENT_ID,
-}; ```
+}; `
 
 
 
