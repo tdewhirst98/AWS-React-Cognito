@@ -20,16 +20,17 @@ const poolData = {
 
 
 
-###STEP 3
+### STEP 3
 Run the following command in your terminal to install all packages found in package.json
 
-```npm install```
+`npm install`
 
 
 
-###STEP 4
+### STEP 4
+
 
 Run the application in project root directoy
 
-```npm start```
+`npm start`
 
