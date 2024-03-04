@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.Login {
+  padding-top: 100px;
+  padding-left: 800px;
+}
+
+
+.Login input[type="text"] {
+  display: block;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Login input[type="password"] {
+  display: block;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Login button {
+  display: block;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Login p {
+  color: red;
+  padding-right: 200px;
+}
