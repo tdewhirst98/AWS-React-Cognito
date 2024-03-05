@@ -21,7 +21,6 @@ const SignUp = () => {
 
         const attributeList = [
             new CognitoUserAttribute({ Name: 'email', Value: email }),
-            new CognitoUserAttribute({ Name: 'username', Value: username})
         ];
 
         userPool.signUp(username, password, attributeList, null, (err, result) => {
