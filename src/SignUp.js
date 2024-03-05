@@ -36,17 +36,26 @@ const SignUp = () => {
     };
 
     return (
-        <div className="Login">
-            <h2>Sign Up</h2>
-            <p>{message}</p>
-            <form onSubmit={handleFormSubmit}>
-                <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                <button type="submit">Sign Up</button>
-            </form>
+        <div className="container">
+          <h2>Sign Up</h2>
+          {message && <p className="error-message">{message}</p>}
+          <form onSubmit={handleFormSubmit}>
+            <div className="form-group">
+              <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+            </div>
+            <div className="form-group">
+              <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div className="form-group">
+              <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <div className="form-group">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
         </div>
-    );
+      );
+      
 };
 
 export default SignUp;
