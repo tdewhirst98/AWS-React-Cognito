@@ -22,7 +22,7 @@ Copy code
    REACT_APP_CLIENT_ID=your_cognito_client_id
 
 
-# Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
+Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
 
 
 
