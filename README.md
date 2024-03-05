@@ -11,20 +11,33 @@ This React application integrates with AWS Cognito for user authentication. It i
    ```bash
    npm install
 Create a .env file in the root directory of the project and add the following environment variables:
+Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
+
+
 
 # dotenv
+Create a .env file in the root directory of the project and add the following environment variables:
 Copy code
 REACT_APP_POOL_ID=your_cognito_user_pool_id
 REACT_APP_CLIENT_ID=your_cognito_client_id
 Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
 
-# Directory Structure
+
+
+
+
+## Directory Structure
 src/
 Signup.js: Contains the code for user signup validation and page.
 ChangePassword.js: Manages password change functionality with proper validation.
 Other React components and files.
 Configuration
 The application uses environment variables to configure the AWS Cognito integration. Make sure to replace your_cognito_user_pool_id and your_cognito_client_id with your actual AWS Cognito user pool ID and client ID respectively.
+
+
+## Configuration
+The application uses environment variables to configure the AWS Cognito integration. Make sure to replace your_cognito_user_pool_id and your_cognito_client_id with your actual AWS Cognito user pool ID and client ID respectively.
+
 
 # Dependencies
 @aws-amplify/ui-react: UI components for AWS Amplify.
@@ -38,6 +51,8 @@ react-scripts: Scripts and configurations for React development.
 Available Scripts
 In the project directory, you can run:
 
+
+# Available Scripts
 npm start: Runs the app in development mode.
 npm build: Builds the app for production.
 npm test: Launches the test runner.
