@@ -36,14 +36,14 @@ Other React components and files.
 The application uses environment variables to configure the AWS Cognito integration. Make sure to replace your_cognito_user_pool_id and your_cognito_client_id with your actual AWS Cognito user pool ID and client ID respectively.
 
 ## Dependencies
-@aws-amplify/ui-react: UI components for AWS Amplify.
-amazon-cognito-identity-js: SDK for working with AWS Cognito user pools.
-aws-amplify: AWS Amplify library for authentication and API management.
-aws-sdk: AWS SDK for JavaScript.
-react: React library.
-react-dom: React DOM library.
-react-router-dom: React Router library for handling routing.
-react-scripts: Scripts and configurations for React development.
+- @aws-amplify/ui-react: UI components for AWS Amplify.
+- amazon-cognito-identity-js: SDK for working with AWS Cognito user pools.
+- aws-amplify: AWS Amplify library for authentication and API management.
+- aws-sdk: AWS SDK for JavaScript.
+- react: React library.
+- react-dom: React DOM library.
+- react-router-dom: React Router library for handling routing.
+- react-scripts: Scripts and configurations for React development.
 
 ## Available Scripts
 In the project directory, you can run:
