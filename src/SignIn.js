@@ -16,10 +16,32 @@ const SignIn = () => {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+
+        let sessionUserAttributes;
+    
+        const handleNewPassword = (newPassword) => {
+            // Check if newPassword is provided
+            if (!newPassword) {
+                console.error("New password is required.");
+                return;
+            }
+        
+            cognitoUser.completeNewPasswordChallenge(newPassword, sessionUserAttributes, {
+                onSuccess: function(result) {
+                    // New password challenge completed successfully
+                    console.log("New password challenge completed successfully:", result);
+                },
+                onFailure: function(err) {
+                    // Error completing new password challenge
+                    console.error("Error completing new password challenge:", err);
+                }
+            });
+        };
     
         const authenticationData = {
             Username: username,
-            Password: password
+            Password: password,
+            NewPassword: newPassword
         };
     
         const authenticationDetails = new AuthenticationDetails(authenticationData);
@@ -48,6 +70,7 @@ const SignIn = () => {
                     newPasswordRequired: (data) => {
                         setMessage("New Password Required: " + JSON.stringify(data));
                         console.log("New Password Required", data);
+                        handleNewPassword(newPassword);
                         resolve(data);
                     }
                 });
@@ -57,6 +80,7 @@ const SignIn = () => {
             console.error('Error:', error);
         }
     };
+    
       
     return (
         <div className="Login">
