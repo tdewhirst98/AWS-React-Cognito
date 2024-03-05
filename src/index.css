@@ -24,7 +24,17 @@ code {
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+
 }
+
+
+.Login input[type="email"] {
+  display: block;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 
 .Login input[type="password"] {
   display: block;
