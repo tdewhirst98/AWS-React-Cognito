@@ -8,7 +8,7 @@ const poolData = {
 
 
 
-const SignIn = () => {
+const ChangePassword = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
@@ -96,4 +96,4 @@ const SignIn = () => {
     );
 };
 
-export default SignIn;
+export default ChangePassword;
