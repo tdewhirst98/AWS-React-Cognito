@@ -18,7 +18,7 @@ This React application integrates with AWS Cognito for user authentication. It i
 # dotenv
 1. Create a .env file in the root directory of the project and add the following environment variables:
 
-2. Copy code
+2. Copy code:
    `REACT_APP_POOL_ID=your_cognito_user_pool_id`
    `REACT_APP_CLIENT_ID=your_cognito_client_id`
 
