@@ -10,8 +10,8 @@ This React application integrates with AWS Cognito for user authentication. It i
 
    ```bash
    npm install
-Create a .env file in the root directory of the project and add the following environment variables:
-Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
+
+
 
 
 
