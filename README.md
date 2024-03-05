@@ -5,10 +5,11 @@ This React application integrates with AWS Cognito for user authentication. It i
 ## Setup
 
 1. Clone the repository to your local machine.
-
-2. Install dependencies using npm:
+2. change into root app direcotry
+3. Install dependencies using npm: 
 
    ```bash
+   cd react-cognito
    npm install
 
 # dotenv
