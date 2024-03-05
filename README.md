@@ -30,8 +30,8 @@ Ensure you have the necessary AWS Cognito user pool and client set up in your AW
 
 ## Directory Structure
 src/
-Signup.js: Contains the code for user signup validation and page. \n
-ChangePassword.js: Manages password change functionality with proper validation. \n
+1. Signup.js: Contains the code for user signup validation and page. 
+2. ChangePassword.js: Manages password change functionality with proper validation. 
 Other React components and files.
 
 ## Configuration
