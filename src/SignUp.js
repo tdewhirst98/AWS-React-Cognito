@@ -4,12 +4,13 @@ import { CognitoUserPool, CognitoUserAttribute } from 'amazon-cognito-identity-j
 
 
 const poolData = {
-    UserPoolId: process.env.REACT_APP_POOL_ID,
+   UserPoolId: process.env.REACT_APP_POOL_ID,
     ClientId: process.env.REACT_APP_CLIENT_ID,
+
 };
 
 const SignUp = () => {
-    const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -37,7 +38,7 @@ const SignUp = () => {
 
     return (
         <div className="container">
-          <h2>Sign Up</h2>
+          <h2>Login </h2>
           {message && <p className="error-message">{message}</p>}
           <form onSubmit={handleFormSubmit}>
             <div className="form-group">
