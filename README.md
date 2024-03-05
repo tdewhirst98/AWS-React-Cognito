@@ -1,36 +1,51 @@
-# Project Name
+# React Cognito App
 
-## Getting Started
+This React application integrates with AWS Cognito for user authentication. It includes features for user signup and password change.
 
-Follow these steps to set up and run the project locally.
+## Setup
 
-### Step 1: Create .env File
+1. Clone the repository to your local machine.
+2. Navigate to the root directory of the cloned repository.
+3. Install dependencies using npm: 
 
-Create a `.env` file in the root directory of the project.
+   ```bash
+   cd react-cognito
+   npm install
 
-### Step 2: Configure Environment Variables
-
-Open the source folder and locate the following lines in your code:
-
-`javascript
-const poolData = {
-    UserPoolId: process.env.REACT_APP_POOL_ID,
-    ClientId: process.env.REACT_APP_CLIENT_ID,
-}; `
-
+# dotenv
+ Create a .env file in the root directory of the project and add the following environment variables:
+   - `REACT_APP_POOL_ID=your_cognito_user_pool_id`
+   - `REACT_APP_CLIENT_ID=your_cognito_client_id`
 
 
-### STEP 3
-Run the following command in your terminal to install all packages found in package.json
-
-`npm install`
+Ensure you have the necessary AWS Cognito user pool and client set up in your AWS account.
 
 
 
-### STEP 4
 
+## Directory Structure
+src/
+- Signup.js: Contains the code for user signup validation and page.
+- ChangePassword.js: Manages password change functionality with proper validation. 
+Other React components and files.
 
-Run the application in project root directoy
+## Configuration
+The application uses environment variables to configure the AWS Cognito integration. Make sure to replace your_cognito_user_pool_id and your_cognito_client_id with your actual AWS Cognito user pool ID and client ID respectively.
 
-`npm start`
+## Dependencies
+- @aws-amplify/ui-react: UI components for AWS Amplify.
+- amazon-cognito-identity-js: SDK for working with AWS Cognito user pools.
+- aws-amplify: AWS Amplify library for authentication and API management.
+- aws-sdk: AWS SDK for JavaScript.
+- react: React library.
+- react-dom: React DOM library.
+- react-router-dom: React Router library for handling routing.
+- react-scripts: Scripts and configurations for React development.
 
+## Available Scripts
+In the project directory, you can run:
+
+- `npm start`: Runs the app in development mode.
+- `npm build`: Builds the app for production.
+- `npm test`: Launches the test runner.
+- `npm eject`: Ejects the app from Create React App setup.
